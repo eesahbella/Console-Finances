@@ -95,7 +95,7 @@ console.log("Total Months:" + " " + totalMonths);
 //The net total amount of Profit/Losses over the entire period.
 
 
-let profitsLosses = finances.map(item => item[1]);
+let profitsLosses = finances.map(item => Number(item[1]));
 
 let netTotal = 0
 for (let i = 0; i < finances.length; i++) {
@@ -108,8 +108,14 @@ console.log("Total $:" + " " + netTotal);
 //You will need to track what the total change in profits is from month to month and then find the average.
 //(Total/(Number of months - 1))
 
+let totalChange = 0;
+for (let i = 1; i < profitsLosses.length; i++) {
+  let change = profitsLosses[i] - profitsLosses[i - 1];
+  totalChange += change;
+}
 
-
+let averageChange = totalChange / (profitsLosses.length - 1);
+console.log("Average Change " + averageChange);
 //The greatest increase in profits (date and difference in the amounts) over the entire period.
 
 
