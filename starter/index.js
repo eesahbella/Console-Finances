@@ -116,8 +116,40 @@ for (let i = 1; i < profitsLosses.length; i++) {
 
 let averageChange = totalChange / (profitsLosses.length - 1);
 console.log("Average Change " + averageChange);
+
+
 //The greatest increase in profits (date and difference in the amounts) over the entire period.
 
+let greatestIncrease = 0;
+let greatestIncreaseDate = '';
 
+for (let i = 1; i < finances.length; i++) {
+  const currentProfit = finances[i][1];
+  const previousProfit = finances[i - 1][1];
+  const difference = currentProfit - previousProfit;
+
+  if (difference > greatestIncrease) {
+    greatestIncrease = difference;
+    greatestIncreaseDate = finances[i][0];
+  }
+}
+
+console.log("Greatest Increase in Profits:" + " " + greatestIncreaseDate + " " +"$" + greatestIncrease);
 
 //The greatest decrease in losses (date and difference in the amounts) over the entire period.
+
+let greatestDecrease = 0;
+let greatestDecreaseDate = "";
+
+for (let i = 1; i < finances.length; i++) {
+  const currentProfit = finances[i][1];
+  const previousProfit = finances[i-1][1];
+  const  difference = currentProfit - previousProfit;
+
+  if (difference < greatestDecrease){
+    greatestDecrease = difference;
+    greatestDecreaseDate = finances[i][0]
+  }
+}
+
+console.log("Greatest Decrease in Losses:" + " " + greatestDecreaseDate + " " + "$" + greatestDecrease);
