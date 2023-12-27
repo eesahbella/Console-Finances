@@ -22,3 +22,11 @@ With a given dataset composed of arrays with two fields: Date and Profit/Losses,
 https://eesahbella.github.io/Console-Finances/
 
 
+## References
+
+* HTML, CSS, and JavaScript All-In-One for Dummies (McFedries, P. (2023) ‘4 Building Dynamic Pages with JavaScript’, in HTML, CSS, & javascript: All-in-one. Hoboken, NJ: John Wiley & Sons, Inc. )
+* https://www.w3schools.com/js/default.asp
+* https://www.freecodecamp.org/news/tag/javascript/
+* Xpert Learning Assistant
+
+
