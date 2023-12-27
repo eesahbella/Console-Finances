@@ -1,8 +1,14 @@
-# Unit 4 Challenge: Console Finances
+# Financial Analysis Console
 
-## Overview
+## Description
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+With a given dataset composed of arrays with two fields: Date and Profit/Losses, I have created a code that analyses the records to calculate each of the following:
+
+*The total number of months included in the dataset.
+
+*The net total amount of Profit/Losses over the entire period.
+
+*The average of the changes in Profit/Losses over the entire period.
 
 ## Instructions
 
